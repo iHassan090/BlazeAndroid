@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Blaze</string>
+    <string name="app_name_lowercase">blaze</string>
 </resources>
