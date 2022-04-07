@@ -1,10 +1,13 @@
 package com.techworx.blaze.activities
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.WindowManager
 import android.view.animation.AnimationUtils
 import com.techworx.blaze.R
 import com.techworx.blaze.databinding.ActivitySplashBinding
+import com.techworx.blaze.helpers.Constants.Companion.SPLASH_TIME
+import com.techworx.blaze.ui.login.activities.Login
 import java.lang.Thread.sleep
 
 class Splash : BasicActivity() {
@@ -27,8 +30,9 @@ class Splash : BasicActivity() {
         val thread = Thread() {
             run() {
                 try {
-                    sleep(1500)
-                    // TODO Move to next screen
+                    sleep(SPLASH_TIME)
+                    startActivity(Intent(this, Login::class.java))
+                    finish()
                 } catch (e: Exception) {
                     e.printStackTrace()
                 }
