@@ -8,4 +8,5 @@
     <color name="ghost">#d0d1d4</color>
     <color name="solitude">#f2f3f6</color>
     <color name="screenBackgroundColor">#FFFFFF</color>
+    <color name="textColor">#242424</color>
 </resources>

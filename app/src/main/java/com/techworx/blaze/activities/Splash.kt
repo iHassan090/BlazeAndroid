@@ -6,7 +6,7 @@ import android.view.WindowManager
 import android.view.animation.AnimationUtils
 import com.techworx.blaze.R
 import com.techworx.blaze.databinding.ActivitySplashBinding
-import com.techworx.blaze.helpers.Constants.Companion.SPLASH_TIME
+import com.techworx.blaze.helpers.Constants.SPLASH_TIME
 import com.techworx.blaze.ui.login.activities.Login
 import java.lang.Thread.sleep
 

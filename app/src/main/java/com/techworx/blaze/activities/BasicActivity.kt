@@ -1,15 +1,18 @@
 package com.techworx.blaze.activities
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.techworx.blaze.Blaze
 import com.techworx.blaze.R
+import com.techworx.blaze.dialog.ProgressDialog
 import com.techworx.blaze.fragments.BasicFragment
 
 
 open class BasicActivity : AppCompatActivity(), View.OnClickListener {
+    lateinit var progressDialog: ProgressDialog
 
     override fun onPostCreate(savedInstanceState: Bundle?) {
         super.onPostCreate(savedInstanceState)
@@ -20,7 +23,9 @@ open class BasicActivity : AppCompatActivity(), View.OnClickListener {
         this.setClickListeners()
     }
 
-    open fun initValues() {}
+    open fun initValues() {
+        this.progressDialog = ProgressDialog(this, getString(R.string.please_wait))
+    }
 
     open fun setAppBar() {
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
@@ -73,4 +78,7 @@ open class BasicActivity : AppCompatActivity(), View.OnClickListener {
             super.onBackPressed()
     }
 
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+    }
 }

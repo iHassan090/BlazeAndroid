@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="Toolbar">
-        <attr name="backgroundEnabled" format="boolean" />
+        <attr name="backButtonEnabled" format="boolean" />
+        <attr name="title" format="string" />
+        <attr name="canSearch" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="PatternedEditText">
+        <attr name="pattern" format="string" />
+        <attr name="specialChar" format="string" />
+        <attr name="showPatternAsHint" format="boolean" />
     </declare-styleable>
 </resources>

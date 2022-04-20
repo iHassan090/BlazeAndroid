@@ -3,10 +3,12 @@
     <string name="app_name_lowercase">blaze</string>
     <string name="enter_your_mobile">Enter your\nmobile number</string>
     <string name="send_you_otp">We will send you a 6-digit verification code</string>
-    <string name="country_code_pk">+92</string>
+    <string name="country_code_default">+1</string>
     <string name="phone_number_hint">323 1234567</string>
     <string name="next">Next</string>
     <string name="error_valid_phone">Please enter a valid phone number.</string>
     <string name="please_wait">Please Wait…</string>
+    <string name="select_country">Select Country</string>
+    <string name="search">Search</string>
 
 </resources>
